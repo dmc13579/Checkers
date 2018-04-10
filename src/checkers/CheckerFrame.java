@@ -18,8 +18,9 @@ public class CheckerFrame extends JFrame implements ActionListener{
            //no need to handle exception as it only affect the appearence
         }
         setupGUI();
-        
-        new PlaySound("Checkers//sounds//Start.wav").start();
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
+        new PlaySound("checkers//sounds//Start.wav").start();
     }
 
     private void setupGUI() {
