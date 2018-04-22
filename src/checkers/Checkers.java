@@ -178,25 +178,25 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         this.add(msg);
 
         rp.setBounds(10, 440, 50, 50);
-        rp.setIcon(redN);
+        rp.setIcon(yellowN);
         this.add(rp);
         rpt.setBounds(60, 450, 60, 20);
         this.add(rpt);
 
         bp.setBounds(110, 440, 50, 50);
-        bp.setIcon(yellowN);
+        bp.setIcon(redN);
         this.add(bp);
         bpt.setBounds(160, 450, 90, 20);
         this.add(bpt);
 
         rk.setBounds(250, 440, 50, 50);
-        rk.setIcon(redK);
+        rk.setIcon(yellowK);
         this.add(rk);
         rkt.setBounds(305, 450, 60, 20);
         this.add(rkt);
 
         bk.setBounds(365, 440, 50, 50);
-        bk.setIcon(yellowK);
+        bk.setIcon(redK);
         this.add(bk);
         bkt.setBounds(420, 450, 100, 20);
         this.add(bkt);
