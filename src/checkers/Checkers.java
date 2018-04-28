@@ -123,7 +123,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         nwB.setBounds(405,70,95,25);//297
         this.add(nwB);
         unB.setBounds(405,100,95,25);
-        //this.add(unB);
+        this.add(unB);
         hlpB.setBounds(415,10,25,25);
         this.add(hlpB);
         snB.setBounds(460,10,25,25);
@@ -203,7 +203,6 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
 
         //g=getGraphics();
         //g.drawImage(redN.getImage(),30,450,this);
-
     }
 
     public void paintComponent(Graphics g)	{
@@ -227,6 +226,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
 
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equalsIgnoreCase("1-Player")){
+            System.out.println("1-player");
             new PlaySound("Checkers//sounds//option.wav").start();
             col.setEnabled(true);
             col.setVisible(true);
@@ -260,6 +260,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
             new PlaySound("Checkers//sounds//option.wav").start();
         }
         if(e.getActionCommand().equalsIgnoreCase("New Game")){
+            System.out.println("New Game");
             new PlaySound("Checkers//sounds//button.wav").start();
             newGame();
         }
